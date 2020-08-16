@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="jumbotron d-flex justify-content-center align-item-center bg-warning">
+        <h1>Hello!</h1>
+    </div>
+    <div class="container" id="main-content">
+        <form>
+
+            <div class="form-group" id="uId">
+                <label for="example ID1">USER ID:</label>
+                <input type="text" class="form-control" id="exampleInputId">
+            </div>
+            <div class="form-group" id="uEmail">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group" id="uPass">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <button type="submit" onclick="validate(this)" class="btn btn-primary">Submit</button>
+        </form>
+        <script src="2.js"></script>
+    </div>
+    <h1 style="display: flex; justify-content: center; color: coral;">Results:</h1>
+    <div class="container">
+        <form>
+            <div class="form-group row">
+                <label for="staticID" class="col-sm-2 col-form-label">ID</label>
+                <div class="col">
+                    <input type="text" readonly class="form-control-plaintext" id="staticID">
+                </div>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col">
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="staticPassword" class="col-sm-2 col-form-label">Pwd</label>
+                    <div class="col">
+                        <input type="password" readonly class="form-control-plaintext" id="staticPassword">
+                    </div>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
